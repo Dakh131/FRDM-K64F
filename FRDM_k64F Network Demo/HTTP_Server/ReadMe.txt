@@ -1,8 +1,9 @@
-/*-----------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 Author: David Khosravi (davidkhosravi@yahoo.se)
 		Date:     2019-07-22
   
- -----------------------------------------------------------------------------*/
+-------------------------------------------------------------------------------
+ 
  This Demo is build base on Keil Demo for HTTP sever IPV4/IPV6
  
 Pack: Keil.MDK-Pro:Network:7.11.0
@@ -17,3 +18,7 @@ Keil.MDK-Pro::Network:Interface:ETH:7.11.0
 Keil.MDK-Pro::Network:Service:Web Server Compact:HTTP:7.11.0
 Keil.MDK-Pro::Network:Socket:TCP:7.11.0
 Keil.MDK-Pro::Network:Socket:UDP:7.11.0
+
+-------------------------------------------------------------------------------
+known issues:
+1) Event Recorder not located in uninitialized memory!
