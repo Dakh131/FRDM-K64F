@@ -1,0 +1,40 @@
+This is an Virtual COM example that demonstrates Communication Device Class (CDC)
+Abstract Control Model (ACM) on USB Device.
+
+It demonstrates a bridge between USB Virtual COM Port and UART port on the
+evaluation board.
+
+Detailed description is available on:
+www.keil.com/pack/doc/MW/USB/html/dev_cdc_tutorial.html
+
+Board:                  Keil 'FRDMK64F'
+Microcontroller:        NXP   'MK64FN1M0VLL12'
+Clock Settings:         XTAL   = 50 MHz
+                        CPUCLK = 120 MHz
+                        USBCLK = 48 MHz
+Bridge functionality:   Non
+
+The PC will install a Virtual COM Port on the PC (see Driver Installation).
+After installation an additional port "FRDMK64F USB VCOM Port(COMx)"
+can be found under System/Hardware/Device Manager/Ports(COM&LPT).
+Number "x" is not fixed as different PC configuration may have different
+"x" displayed in the device manager. The USB Host driver assigns "x"
+dynamically based on the existing COM port configuration in the system.
+
+Testing the USB Virtual COM Port:
+
+  Connect USB Host PC with USB cable to USB connector on the embedded board.
+  
+  Open Serial Terminal applications in Windows:
+    -  one with "FRDMK64F USB VCOM Port(COMx)"
+   
+  Data sent from application to Serial Terminal.
+
+The program is available for target(s):
+
+ 
+
+Note : Digitally signing of the driver catalog file is required to install
+drivers on 64-bit PCs using Windows Vista or later Windows versions. Please
+refer to Microsoft documentation for further information.
+
