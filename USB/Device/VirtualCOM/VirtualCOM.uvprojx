@@ -339,7 +339,7 @@
 --diag_suppress=1296,186 
  
 </MiscControls>
-              <Define>DEBUG, CPU_MK64FN1M0VLL12, PRINTF_FLOAT_ENABLE=0, SCANF_FLOAT_ENABLE=0, PRINTF_ADVANCED_ENABLE=0, SCANF_ADVANCED_ENABLE=0, FRDM_K64F, FREEDOM</Define>
+              <Define>DEBUG, CPU_MK64FN1M0VLL12, PRINTF_FLOAT_ENABLE=0, SCANF_FLOAT_ENABLE=0, PRINTF_ADVANCED_ENABLE=0, SCANF_ADVANCED_ENABLE=0, FRDM_K64F, FREEDOM, __MCUXPRESSO, SDK_DEBUGCONSOLE=DEBUGCONSOLE_REDIRECT_TO_TOOLCHAIN</Define>
               <Undefine></Undefine>
               <IncludePath>board;source</IncludePath>
             </VariousControls>
@@ -506,6 +506,18 @@
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="Event Recorder" Cvariant="DAP" Cvendor="Keil" Cversion="1.4.0" condition="Cortex-M Device">
+        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.1"/>
+        <targetInfos>
+          <targetInfo name="DEBUG_MK64FN1M Flash"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDIN" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M with ITM">
+        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.1"/>
+        <targetInfos>
+          <targetInfo name="DEBUG_MK64FN1M Flash"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDOUT" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M with ITM">
         <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.1"/>
         <targetInfos>
           <targetInfo name="DEBUG_MK64FN1M Flash"/>

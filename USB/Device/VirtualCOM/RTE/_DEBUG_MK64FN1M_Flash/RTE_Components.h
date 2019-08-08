@@ -22,6 +22,12 @@
 /*  Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0 */
 #define RTE_Compiler_EventRecorder
           #define RTE_Compiler_EventRecorder_DAP
+/*  Keil.ARM Compiler::Compiler:I/O:STDIN:ITM:1.2.0 */
+#define RTE_Compiler_IO_STDIN           /* Compiler I/O: STDIN */
+          #define RTE_Compiler_IO_STDIN_ITM       /* Compiler I/O: STDIN ITM */
+/*  Keil.ARM Compiler::Compiler:I/O:STDOUT:ITM:1.2.0 */
+#define RTE_Compiler_IO_STDOUT          /* Compiler I/O: STDOUT */
+          #define RTE_Compiler_IO_STDOUT_ITM      /* Compiler I/O: STDOUT ITM */
 /*  Keil.MDK-Plus::USB:CORE:Debug:6.13.6 */
 #define RTE_USB_Core                    /* USB Core */
           #define RTE_USB_Core_Debug              /* USB Core Debug Version */
