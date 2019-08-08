@@ -54,7 +54,7 @@ static void Message (void const *arg) {
 
 int main(void)
 {
-    BOARD_InitPins();
+    BOARD_InitBootPins();
     BOARD_InitLEDsPins();
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
