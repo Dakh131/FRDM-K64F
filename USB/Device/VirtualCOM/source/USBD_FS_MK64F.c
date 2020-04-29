@@ -151,7 +151,8 @@ static uint32_t            setup_packet[2];     // Setup packet data
 static volatile uint8_t    setup_received;      // Setup packet received
 
 // Buffer Descriptor Table
-static BD_t __align(512)   bd          [(USBD_MAX_ENDPOINT_NUM + 1U) * 2U * 2U];
+//static BD_t __align(512)   bd          [(USBD_MAX_ENDPOINT_NUM + 1U) * 2U * 2U];
+static BD_t __attribute__((aligned(512)))    bd          [(USBD_MAX_ENDPOINT_NUM + 1U) * 2U * 2U];
 
 // Endpoints IN data buffers
 static uint32_t            ep_in_data  [(USBD_MAX_ENDPOINT_NUM + 1U)][2U][USBD_EP_MAX_PACKET_SIZE / 4U];

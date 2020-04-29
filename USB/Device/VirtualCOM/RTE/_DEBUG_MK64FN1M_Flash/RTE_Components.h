@@ -28,15 +28,17 @@
 /*  Keil.ARM Compiler::Compiler:I/O:STDOUT:ITM:1.2.0 */
 #define RTE_Compiler_IO_STDOUT          /* Compiler I/O: STDOUT */
           #define RTE_Compiler_IO_STDOUT_ITM      /* Compiler I/O: STDOUT ITM */
-/*  Keil.MDK-Plus::USB:CORE:Debug:6.13.6 */
+/*  Keil.MDK-Plus::USB:CORE:Debug:6.14.0 */
 #define RTE_USB_Core                    /* USB Core */
           #define RTE_USB_Core_Debug              /* USB Core Debug Version */
-/*  Keil.MDK-Plus::USB:Device:6.13.6 */
+/*  Keil.MDK-Plus::USB:Device:6.14.0 */
 #define RTE_USB_Device_0                /* USB Device 0 */
 
-/*  Keil.MDK-Plus::USB:Device:CDC:6.13.6 */
+/*  Keil.MDK-Plus::USB:Device:CDC:6.14.0 */
 #define RTE_USB_Device_CDC_0            /* USB Device CDC instance 0 */
 
+/*  NXP::Device:SDK Utilities:serial_manager_uart:1.0.0 */
+#define SERIAL_PORT_TYPE_UART 1
 
 
 #endif /* RTE_COMPONENTS_H */
