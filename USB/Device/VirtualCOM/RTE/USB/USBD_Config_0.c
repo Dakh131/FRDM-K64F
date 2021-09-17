@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------
  * MDK Middleware - Component ::USB:Device
- * Copyright (c) 2004-2018 ARM Germany GmbH. All rights reserved.
+ * Copyright (c) 2004-2019 Arm Limited (or its affiliates). All rights reserved.
  *------------------------------------------------------------------------------
  * Name:    USBD_Config_0.c
  * Purpose: USB Device Configuration

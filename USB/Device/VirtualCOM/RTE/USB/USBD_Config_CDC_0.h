@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------
  * MDK Middleware - Component ::USB:Device
- * Copyright (c) 2004-2018 ARM Germany GmbH. All rights reserved.
+ * Copyright (c) 2004-2019 Arm Limited (or its affiliates). All rights reserved.
  *------------------------------------------------------------------------------
  * Name:    USBD_Config_CDC_0.h
  * Purpose: USB Device Communication Device Class (CDC) Configuration
@@ -37,8 +37,8 @@
 
 
 //     <h>Endpoint Settings
-//       <i>Parameters are used to create USB Descriptors and for memory
-//       <i>allocation in the USB component.
+//       <i>Parameters are used to create Endpoint Descriptors
+//       <i>and for memory allocation in the USB component.
 
 //       <h>Full/Low-speed (High-speed disabled)
 //       <i>Parameters apply when High-speed is disabled in USBD_Config_n.c

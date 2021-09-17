@@ -20,6 +20,8 @@
  *
  * $Date:        19. September 2017
  * $Revision:    V1.2
+ * $Date:        17. September 2021
+ * $Revision:    V1.2.1 David Khosravi Change _nop-> _NOP
  *
  * Driver:       Driver_USBD0
  * Project:      USB Full/Low-Speed Device Driver for Freescale MK64F
@@ -334,7 +336,7 @@ static int32_t USBD_PowerControl (ARM_POWER_STATE state) {
       otg_fs_state  &= ~OTG_FS_USBD_DRIVER_POWERED;     // Clear powered flag
       USB0->INTEN    =  0U;                             // Disable USB interrupts
       USB0->USBTRC0 |=  USB_USBTRC0_USBRESET_MASK;      // Reset OTG FS module
-      __nop();__nop();__nop();__nop();__nop();__nop();  // Wait for reset to finish
+      __NOP();__NOP();__NOP();__NOP();__NOP();__NOP();  // Wait for reset to finish
                                                         // Reset variables
       setup_received =  0U;
       memset((void *)&usbd_state, 0, sizeof(usbd_state));
@@ -351,7 +353,7 @@ static int32_t USBD_PowerControl (ARM_POWER_STATE state) {
       SIM->SOPT2    |=  SIM_SOPT2_USBSRC_MASK;          // MCGFLLCLK, MCGPLLCLK, or IRC48M used as src
       SIM->SCGC4    |=  SIM_SCGC4_USBOTG_MASK;          // Enable OTG FS Clock
       USB0->USBTRC0 |=  USB_USBTRC0_USBRESET_MASK;      // Reset OTG FS module
-      __nop();__nop();__nop();__nop();__nop();__nop();  // Wait for reset to finish
+      __NOP();__NOP();__NOP();__NOP();__NOP();__NOP();  // Wait for reset to finish
       USB0->CTL     &= ~USB_CTL_USBENSOFEN_MASK;        // Disable USB
       USB0->CTL     |=  USB_CTL_USBENSOFEN_MASK;        // Enable USB
       USB0->USBCTRL  =  0U;                             // Reset USB CTRL register

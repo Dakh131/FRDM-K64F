@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding= "UTF-8" ?>
-<configuration name="MK64FN1M0xxx12" version="1.6" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.6 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.6.xsd" uuid="842a5fe3-d732-48fe-81c0-d93ca32dc765" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<configuration name="MK64FN1M0xxx12" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.8 http://mcuxpresso.nxp.com/XSD/mex_configuration_1.8.xsd" uuid="842a5fe3-d732-48fe-81c0-d93ca32dc765" version="1.8" xmlns="http://mcuxpresso.nxp.com/XSD/mex_configuration_1.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <common>
       <processor>MK64FN1M0xxx12</processor>
       <package>MK64FN1M0VLL12</package>
@@ -16,9 +16,9 @@
       <generate_code_modified_registers_only>false</generate_code_modified_registers_only>
    </preferences>
    <tools>
-      <pins name="Pins" version="6.0" enabled="true" update_project_code="true">
+      <pins name="Pins" version="8.0" enabled="true" update_project_code="true">
          <pins_profile>
-            <processor_version>6.0.1</processor_version>
+            <processor_version>8.0.1</processor_version>
          </pins_profile>
          <functions_list>
             <function name="BOARD_InitPins">
@@ -589,9 +589,9 @@
             </function>
          </functions_list>
       </pins>
-      <clocks name="Clocks" version="6.0" enabled="true" update_project_code="true">
+      <clocks name="Clocks" version="7.0" enabled="true" update_project_code="true">
          <clocks_profile>
-            <processor_version>6.0.1</processor_version>
+            <processor_version>8.0.1</processor_version>
          </clocks_profile>
          <clock_configurations>
             <clock_configuration name="BOARD_BootClockRUN">
@@ -730,7 +730,7 @@
          <functional_groups/>
          <components/>
       </periphs>
-      <tee name="TEE" version="1.0" enabled="false" update_project_code="true">
+      <tee name="TEE" version="2.0" enabled="false" update_project_code="true">
          <tee_profile>
             <processor_version>N/A</processor_version>
          </tee_profile>
